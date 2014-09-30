@@ -14,6 +14,7 @@
 		<pre>
 			<?php
 				print_r($_GET);
+				echo php_strip_whitespace($dictionary[7]).'d';
 			?>
 		</pre>
 		<div class="container">
@@ -48,8 +49,12 @@
 						<input name="seperator" type="radio" value="-">-<br>
 						<input name="seperator" type="radio" value="+">+<br>
 						<input name="seperator" type="radio" value="Surprise me!">Surprise me!<br>
-						<input name="includeNum" type="checkbox">Include a number at the end of my password.<br>
-						<input name="includeSym" type="checkbox">Include a symbol at the end of my password.<br>
+						<label name="includeNum">Include a number at the end of your password?<br>
+						<input name="includeNum" type="radio" value="yes">Yes<br>
+						<input name="includeNum" type="radio" value="no">No<br>
+						<label name="includeSym">Include a symbol at the end of your password?<br>
+						<input name="includeSym" type="radio" value="yes">Yes<br>
+						<input name="includeSym" type="radio" value="no">No<br>
 						<input type="submit" name="Generate Password" value="Generate Password">
 					</form>
 					<h3>Password: </h3><p class="password"><?=$password?></p>
