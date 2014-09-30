@@ -1,3 +1,10 @@
+$(":button").on({
+	'click': function(){
+		window.location.replace('http://p2.sarahecobb.com');
+		console.log('clicked button');
+	}
+});
+
 function validateForm () {
 	var wordCase = document.forms['generator']['case'].value;
 	var seperator = document.forms['generator']['seperator'].value;
@@ -9,3 +16,4 @@ function validateForm () {
     	return false;
     }
 }
+

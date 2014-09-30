@@ -40,7 +40,6 @@
 						<input name="case" type="radio" value="Capitalize each word.">Capitalize each word.<br>
 						<input name="case" type="radio" value="All upper case letters.">All upper case letters.<br>
 						<input name="case" type="radio" value="All lower case letters.">All lower case letters.
-						<span class="error"><?=$caseErr?></span></br>
 						<label name="seperator" value="Surprise me!">What character should separate your words?</label></br>
 						<input name="seperator" type="radio" value="~">~<br>
 						<input name="seperator" type="radio" value="*">*<br>
@@ -54,7 +53,7 @@
 						<input name="includeSym" type="radio" value="yes">Yes<br>
 						<input name="includeSym" type="radio" value="no">No<br>
 						<input type="submit" name="Generate Password" value="Generate Password">
-						<input type="reset" name="reset form" value="RESET">
+						<input type="button" id="reset" value="RESET">
 					</form>
 				</div>
 			</div>
