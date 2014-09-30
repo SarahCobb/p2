@@ -26,7 +26,7 @@
 				<div class="col-md-4">
 					<h2 class="generate">Generate Your XKCD Password</h2>
 					<form method="GET" name="generator" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" onsubmit="return validateForm()">
-						<label name="numWords">How many words should be included?</label>
+						<label>How many words should be included?</label><br>
 						<select name="numWords">
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -34,23 +34,20 @@
 							<option value="4">4</option>
 							<option value="5">5</option>
 							<option value="6">6</option>
-						</select><br>
-						<label name="capitalize" value="All lower case letters.">Would you prefer your words capitalized, all lower case, or all upper case?</label><br>
+						</select><br><br>
+						<label>Would you prefer your words capitalized, all lower case, or all upper case?</label><br>
 						<input name="case" type="radio" value="Capitalize each word.">Capitalize each word.<br>
 						<input name="case" type="radio" value="All upper case letters.">All upper case letters.<br>
-						<input name="case" type="radio" value="All lower case letters.">All lower case letters.
-						<label name="seperator" value="Surprise me!">What character should separate your words?</label></br>
+						<input name="case" type="radio" value="All lower case letters.">All lower case letters.<br><br>
+						<label>What character should separate your words?</label><br>
 						<input name="seperator" type="radio" value="~">~<br>
 						<input name="seperator" type="radio" value="*">*<br>
 						<input name="seperator" type="radio" value="-">-<br>
 						<input name="seperator" type="radio" value="+">+<br>
-						<input name="seperator" type="radio" value="Surprise me!">Surprise me!<br>
-						<label name="includeNum">Include a number at the end of your password?</label><br>
-						<input name="includeNum" type="radio" value="yes">Yes<br>
-						<input name="includeNum" type="radio" value="no">No<br>
-						<label name="includeSym">Include a symbol at the end of your password?</label><br>
-						<input name="includeSym" type="radio" value="yes">Yes<br>
-						<input name="includeSym" type="radio" value="no">No<br>
+						<input name="seperator" type="radio" value="Surprise me!">Surprise me!<br><br>
+						<label>Include a number and/or symbol at the end of your password?</label><br>
+						<input name="includeNum" type="checkbox" value="yes">Include a number<br>
+						<input name="includeSym" type="checkbox" value="yes">Include a symbol<br>
 						<input type="submit" name="Generate Password" value="Generate Password">
 						<input type="button" id="reset" value="RESET">
 					</form>
