@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="validation.js"></script>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
    	<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
@@ -25,7 +26,7 @@
 				</div>
 				<div class="col-md-4">
 					<h2>Generate Your XKCD Password</h2>
-					<form method="GET" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+					<form method="GET" name="generator" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" onsubmit="return validateForm()">
 						<label name="numWords">How many words should be included?</label>
 						<select name="numWords">
 							<option value="1">1</option>
@@ -38,7 +39,8 @@
 						<label name="capitalize" value="All lower case letters.">Would you prefer your words capitalized, all lower case, or all upper case?</label><br>
 						<input name="case" type="radio" value="Capitalize each word.">Capitalize each word.<br>
 						<input name="case" type="radio" value="All upper case letters.">All upper case letters.<br>
-						<input name="case" type="radio" value="All lower case letters.">All lower case letters.<br>
+						<input name="case" type="radio" value="All lower case letters.">All lower case letters.
+						<span class="error"><?=$caseErr?></span></br>
 						<label name="seperator" value="Surprise me!">What character should separate your words?</label></br>
 						<input name="seperator" type="radio" value="~">~<br>
 						<input name="seperator" type="radio" value="*">*<br>

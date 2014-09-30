@@ -6,9 +6,6 @@
 # $_GET['includeSym'] = boolean, whether to include a symbol
 # $_GET['case'] = boolean, whether to capitalize the words
 
-# verify proper form usage
-
-
 # global variables
 $password = '';
 $newPassword = '';
