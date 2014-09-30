@@ -13,15 +13,16 @@
 	<body>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-8">
 					<div class="row text-center">
 						<h1>XKCD Password Generator</h1>
 						<h2>Do you often forget your passwords and need to reset them?</h2>
 						<p>In an effort to remember passwords, most people use a few variations of the same word with a few characters substituted by symbols or numbers... and still can't keep all the versions straight. This results in resetting passwords frequently, and periodically ending up with a nasty warning email with news that your accounts have been compromised and that you need to reset your password ASAP. It turns out, despite how difficult it is for <i>us</i> to remember those passwords, it is actually <i>easy</i> for a computer to crack them!</p>
 						<p>XKCD, the web comic, proposed an alternate solution to these password problems. By using a long sequence of full words, rather than one word with several substitutions, the possible combinations are exponentially increased while improving the memorability of your password.</p>
+						<a class="image" href="http://xkcd.com/936/"><img alt="xkcd password comic" src="http://imgs.xkcd.com/comics/password_strength.png"></a>
 					</div>
 				</div>
-				</div class="col-md-6">
+				<div class="col-md-4">
 					<h2>Generate Your XKCD Password</h2>
 					<form method="GET" action="index.php">
 						<label name="numWords">How many words should be included?</label>
@@ -43,23 +44,16 @@
 						<input name="seperator" type="radio" value="-">-<br>
 						<input name="seperator" type="radio" value="+">+<br>
 						<input name="seperator" type="radio" value="Surprise me!">Surprise me!<br>
-						<label name="includeNum">Include a number at the end of your password?<br>
+						<label name="includeNum">Include a number at the end of your password?</label><br>
 						<input name="includeNum" type="radio" value="yes">Yes<br>
 						<input name="includeNum" type="radio" value="no">No<br>
-						<label name="includeSym">Include a symbol at the end of your password?<br>
+						<label name="includeSym">Include a symbol at the end of your password?</label><br>
 						<input name="includeSym" type="radio" value="yes">Yes<br>
 						<input name="includeSym" type="radio" value="no">No<br>
 						<input type="submit" name="Generate Password" value="Generate Password">
 					</form>
 					<h3>Password: </h3><p class="password"><?=$password?></p>
-					<p>Need to start over? </p><a href="index.php">Click here!</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="row text-center">
-						<a class="image" href="http://xkcd.com/936/"><img alt="xkcd password comic" src="http://imgs.xkcd.com/comics/password_strength.png"></a>
-					</div>		
+					<p>Need to start over? <a href="index.php">Click here!</a></p>
 				</div>
 			</div>
 		</div>

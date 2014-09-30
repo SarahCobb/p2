@@ -78,5 +78,5 @@ if ($_GET['includeSym'] == 'yes') {
 	updatePassword();
 }
 
-# strip whitespace from password
+# strip new lines from password
 $password = preg_replace('/\s+/','',$password);
