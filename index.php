@@ -2,21 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light_Two' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+   	<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' type='text/css' href='style.css'>
     <?php require 'logic.php' ?>
     <title>Sarah Cobb Project 2</title>
 </head>
 	<body>
-		<pre>
-			<?php
-				print_r($_GET);
-				echo php_strip_whitespace($dictionary[7]).'d';
-			?>
-		</pre>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">

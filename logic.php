@@ -20,7 +20,7 @@ $dictionary = file('dictionary.txt');
 $numbers = array(0,1,2,3,4,5,6,7,8,9);
 
 # generate symbol array
-$symbols = array('~','!','?','@','#','$','%','^','&','*','(',')','+','=','{','}','|','<','>');
+$symbols = array('~','!','?','@','#','$','%','^','&','*','+','=','<','>');
 
 # generate seperator array
 $seperators = array('~','*','-','+');
@@ -52,15 +52,13 @@ for ($i = 0; $i < $_GET['numWords']; $i++) {
 	} else {
 		$newWord = strtolower($newWord);
 	}
-	# strip whitespace from word
-	trim($newWord);
 	# check for null password
 	if ($password == '') {
 		$newPassword = $newWord;
 		updatePassword();
 	} else {
 		# add seperator and new word to existing password;
-		$newPassword = $password . $seperator . $newWord;
+		$newPassword = $password.$seperator.$newWord;
 		# update password
 		updatePassword();
 	}
@@ -79,3 +77,6 @@ if ($_GET['includeSym'] == 'yes') {
 	$newPassword = $password . $symbol;
 	updatePassword();
 }
+
+# strip whitespace from password
+$password = preg_replace('/\s+/','',$password);
