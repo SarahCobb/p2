@@ -1,6 +1,12 @@
 body {
 	font-family: 'Nixie One', cursive;
 }
+
+div.password {
+	padding: 5px;
+	background-color: #eee;
+}
+
 h1 {
 	font-size: 36px;
 }
@@ -9,21 +15,17 @@ h2 {
 	font-size: 24px;
 }
 
-h3 {
-	font-size: 18px;
-	font-weight: bold;
-}
-
 p {
 	font-size: 14px;
+	margin: 10px;
 }
 
 p.password {
 	font-size: 18px;
 }
 
-img {
-	max-width: 1000px;
+p.restart {
+	margin: 10x 10px 20px 0px;
 }
 
 a {
@@ -53,7 +55,7 @@ input[type=radio] {
 	margin: 5px!important;	
 }
 
-input[type=submit] {
+input[type=submit], input[type=reset] {
 	font-size: 16px;
 	margin: 10px 10px 0 0!important;
 	background-color: #eee;

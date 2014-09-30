@@ -12,4 +12,4 @@ Google Fonts: [https://www.google.com/fonts/specimen/Shadows+Into+Light+Two](htt
 Bootstrap: [http://www.bootstrapcdn.com/](http://www.bootstrapcdn.com/)  
 Bootstrap Tutorial: [http://www.tutorialrepublic.com/twitter-bootstrap-tutorial](http://www.tutorialrepublic.com/twitter-bootstrap-tutorial)  
 PHP Documentation: [http://us1.php.net/manual/en/index.php](http://us1.php.net/manual/en/index.php)
-Stack Overflow: [http://stackoverflow.com/questions/3760816/remove-new-lines-from-string](http://stackoverflow.com/questions/3760816/remove-new-lines-from-string)
+Stack Overflow: [http://stackoverflow.com/questions/3760816/remove-new-lines-from-string](http://stackoverflow.com/questions/3760816/remove-new-lines-from-string), [http://stackoverflow.com/questions/18763719/images-not-resizing-default-bootstrap-classes-only](http://stackoverflow.com/questions/18763719/images-not-resizing-default-bootstrap-classes-only)
