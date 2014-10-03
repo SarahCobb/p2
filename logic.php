@@ -1,11 +1,5 @@
 <?php
 
-# $_GET['numWords'] = number of words to use in the password
-# $_GET['separator'] = which separator character to use
-# $_GET['includeNum'] = boolean, whether to include a number
-# $_GET['includeSym'] = boolean, whether to include a symbol
-# $_GET['case'] = boolean, whether to capitalize the words
-
 # global variables
 $password = '';
 $newPassword = '';
@@ -14,7 +8,7 @@ $symbol = '';
 $separator = '';
 
 # generate dictionary from file
-$dictionary = file('dictionary.txt');
+$dictionary = file('http://wortschatz.uni-leipzig.de/Papers/top10000en.txt');
 
 # generate numerical array
 $numbers = array(1,2,3,4,5,6,7,8,9);
