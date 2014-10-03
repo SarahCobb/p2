@@ -4,11 +4,11 @@
 ## Description  
 A XKCD style password generator.  
 ## Demo  
-TBD  
+[http://screencast.com/t/UzilbSGqv4L](http://screencast.com/t/UzilbSGqv4L) 
 ## TA Instructions  
-Implemented Bootstrap -- elements will rearrange on smaller screens. Using a txt file for word bank. Added logic for customizing separator character and changing word case, validation and page refresh with JavaScript/jQuery.  
+I am using a txt file for the word bank. Added logic for customizing separator character and changing word case, validation and page refresh with JavaScript/jQuery. Implemented Bootstrap -- elements will rearrange on smaller screens.  
   
-Validation is not working in Safari. Please use Chrome or FireFox to evaluate.
+I couldn't get my validation to work in Safari. Please use Chrome or FireFox to evaluate.
 
 ##External Resources  
 Google Fonts: [https://www.google.com/fonts/specimen/Nixie+One](https://www.google.com/fonts/specimen/Nixie+One)  
