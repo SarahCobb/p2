@@ -26,15 +26,15 @@
 				<div class="col-md-4">
 					<h2 class="generate">Generate Your XKCD Password</h2>
 					<form method="GET" name="generator" id="generator" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
-						<label for="numWords">How many words should be included?</label><br>
-						<select name="numWords" id="numWords">
-							<option value="2" id="numWords">2</option>
-							<option value="3" id="numWords">3</option>
-							<option value="4" id="numWords">4</option>
-							<option value="5" id="numWords">5</option>
-							<option value="6" id="numWords">6</option>
+						<label>How many words should be included?</label><br>
+						<select name="numWords">
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
 						</select><br><br>
-						<label for="letterCase">Would you prefer your words capitalized, all lower case, or all upper case?</label><br>
+						<label>Would you prefer your words capitalized, all lower case, or all upper case?</label><br>
 						<input name="letterCase" type="radio" value="Capitalize each word.">Capitalize each word.<br>
 						<input name="letterCase" type="radio" value="All upper case letters.">All upper case letters.<br>
 						<input name="letterCase" type="radio" value="All lower case letters.">All lower case letters.<br><br>

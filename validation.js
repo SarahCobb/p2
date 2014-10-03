@@ -8,7 +8,8 @@ $(":button").on({
 $( "#generator" ).validate({
   rules: {
     numWords: {
-    	range: [2,6]
+    	required: true,
+      range: [2,6]
     },
     letterCase: {
       required: true
@@ -19,7 +20,7 @@ $( "#generator" ).validate({
   },
   messages: {
   	numWords: {
-  		range: "Please choose a number between 2 and 6" 
+  		range: "Please choose a number between 2 and 6." 
   	},
   	letterCase: {
   		required: "Please choose a case."
@@ -29,6 +30,6 @@ $( "#generator" ).validate({
   	}
   },
   errorPlacement: function(error,element) {
-	error.insertAfter("#insertError");
+	    error.insertAfter("#insertError");
   } 
 });
