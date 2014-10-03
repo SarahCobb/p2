@@ -34,20 +34,20 @@ function updatePassword () {
 }
 
 # set separator value
-if ($_GET['separator'] == 'Surprise me!') {
+if ($_POST['separator'] == 'Surprise me!') {
 	$separator = $separators[rand(0, count($separators) - 1)];
 } else {
-	$separator = $_GET['separator']; 
+	$separator = $_POST['separator']; 
 }
 
 # loop through dictionary and add words to password
-for ($i = 0; $i < $_GET['numWords']; $i++) {
+for ($i = 0; $i < $_POST['numWords']; $i++) {
 	# extract new word from dictionary
 	$newWord = $dictionary[rand(0, count($dictionary) - 1)];
 	# capitalize word if required
-	if ($_GET['letterCase'] == 'Capitalize each word.') {
+	if ($_POST['letterCase'] == 'Capitalize each word.') {
 		$newWord = ucwords($newWord);
-	} elseif ($_GET['letterCase'] == 'All upper case letters.') {
+	} elseif ($_POST['letterCase'] == 'All upper case letters.') {
 		$newWord = strtoupper($newWord);
 	} else {
 		$newWord = strtolower($newWord);
@@ -65,14 +65,14 @@ for ($i = 0; $i < $_GET['numWords']; $i++) {
 }
 
 # add number if required
-if ($_GET['includeNum'] == 'yes') {
+if ($_POST['includeNum'] == 'yes') {
 	$number = $numbers[rand(0, count($number) - 1)];
 	$newPassword = $password . $number;
 	updatePassword();
 } 
 
 # add symbol if required
-if ($_GET['includeSym'] == 'yes') {
+if ($_POST['includeSym'] == 'yes') {
 	$symbol = $symbols[rand(0, count($symbols) - 1)];
 	$newPassword = $password . $symbol;
 	updatePassword();

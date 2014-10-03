@@ -11,6 +11,7 @@
     <title>Sarah Cobb Project 2</title>
 </head>
 	<body>
+		<PRE><?php print_r($_POST); ?></pre>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8">
@@ -25,7 +26,7 @@
 				</div>
 				<div class="col-md-4">
 					<h2 class="generate">Generate Your XKCD Password</h2>
-					<form method="GET" name="generator" id="generator" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
+					<form method="POST" name="generator" id="generator" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
 						<label>How many words should be included?</label><br>
 						<select name="numWords">
 							<option value="2">2</option>
