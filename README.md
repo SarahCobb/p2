@@ -17,5 +17,5 @@ Bootstrap Tutorial: [http://www.tutorialrepublic.com/twitter-bootstrap-tutorial]
 PHP Documentation: [http://us1.php.net/manual/en/index.php](http://us1.php.net/manual/en/index.php)  
 Stack Overflow: [http://stackoverflow.com/questions/3760816/remove-new-lines-from-string](http://stackoverflow.com/questions/3760816/remove-new-lines-from-string), [http://stackoverflow.com/questions/18763719/images-not-resizing-default-bootstrap-classes-only](http://stackoverflow.com/questions/18763719/images-not-resizing-default-bootstrap-classes-only)  
 jQuery API: [http://api.jquery.com/button-selector/](http://api.jquery.com/button-selector/), [http://api.jquery.com/click/](http://api.jquery.com/click/)  
-jQuery Validation: [http://www.websitecodetutorials.com/code/jquery-plugins/jquery-validation.php](http://www.websitecodetutorials.com/code/jquery-plugins/jquery-validation.php), [http://jqueryvalidation.org/category/methods/](http://jqueryvalidation.org/category/methods/)
+jQuery Validation: [http://www.websitecodetutorials.com/code/jquery-plugins/jquery-validation.php](http://www.websitecodetutorials.com/code/jquery-plugins/jquery-validation.php), [http://jqueryvalidation.org/category/methods/](http://jqueryvalidation.org/category/methods/)  
 Word List: [http://wortschatz.uni-leipzig.de/Papers/top10000en.txt](http://wortschatz.uni-leipzig.de/Papers/top10000en.txt)  
