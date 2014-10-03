@@ -17,10 +17,10 @@ $separator = '';
 $dictionary = file('dictionary.txt');
 
 # generate numerical array
-$numbers = array(0,1,2,3,4,5,6,7,8,9);
+$numbers = array(1,2,3,4,5,6,7,8,9);
 
 # generate symbol array
-$symbols = array('~','!','?','@','#','$','%','^','&','*','+','=','<','>');
+$symbols = array('~','!','?','@','#','$','%','&','*','+','=');
 
 # generate separator array
 $separators = array('~','*','-','+');

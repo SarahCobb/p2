@@ -11,7 +11,6 @@
     <title>Sarah Cobb Project 2</title>
 </head>
 	<body>
-		<PRE><?php print_r($_POST); ?></pre>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8">
