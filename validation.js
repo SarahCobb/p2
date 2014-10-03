@@ -5,23 +5,6 @@ $(":button").on({
 	}
 });
 
-/*
-function validateForm () {
-	var wordCase = document.forms['generator']['case'].value;
-	var separator = document.forms['generator']['separator'].value;
-    if (wordCase == null || wordCase == "") {
-        alert("Case is required.");
-        return false;
-    } else if (separator == null || separator == "") {
-    	alert("separator is required.");
-    	return false;
-    }
-} */
-
-/*jQuery.validator.setDefaults({
-  debug: true,
-  success: "valid"
-});*/
 $( "#generator" ).validate({
   rules: {
     numWords: {
