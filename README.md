@@ -7,6 +7,9 @@ A XKCD style password generator.
 TBD  
 ## TA Instructions  
 Implemented Bootstrap -- elements will rearrange on smaller screens. Using a txt file for word bank. Added logic for customizing separator character and changing word case, validation and page refresh with JavaScript/jQuery.  
+  
+Validation is not working in Safari. Please use Chrome or FireFox to evaluate.
+
 ##External Resources  
 Google Fonts: [https://www.google.com/fonts/specimen/Nixie+One](https://www.google.com/fonts/specimen/Nixie+One)  
 Bootstrap: [http://www.bootstrapcdn.com/](http://www.bootstrapcdn.com/)  
