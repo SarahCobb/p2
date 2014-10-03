@@ -1,7 +1,7 @@
 <?php
 
 # $_GET['numWords'] = number of words to use in the password
-# $_GET['seperator'] = which seperator character to use
+# $_GET['separator'] = which separator character to use
 # $_GET['includeNum'] = boolean, whether to include a number
 # $_GET['includeSym'] = boolean, whether to include a symbol
 # $_GET['case'] = boolean, whether to capitalize the words
@@ -11,7 +11,7 @@ $password = '';
 $newPassword = '';
 $number = '';
 $symbol = '';
-$seperator = '';
+$separator = '';
 
 # generate dictionary from file
 $dictionary = file('dictionary.txt');
@@ -22,8 +22,8 @@ $numbers = array(0,1,2,3,4,5,6,7,8,9);
 # generate symbol array
 $symbols = array('~','!','?','@','#','$','%','^','&','*','+','=','<','>');
 
-# generate seperator array
-$seperators = array('~','*','-','+');
+# generate separator array
+$separators = array('~','*','-','+');
 
 # update password 
 function updatePassword () {
@@ -33,11 +33,11 @@ function updatePassword () {
 	return $password;
 }
 
-# set seperator value
-if ($_GET['seperator'] == 'Surprise me!') {
-	$seperator = $seperators[rand(0, count($seperators) - 1)];
+# set separator value
+if ($_GET['separator'] == 'Surprise me!') {
+	$separator = $separators[rand(0, count($separators) - 1)];
 } else {
-	$seperator = $_GET['seperator']; 
+	$separator = $_GET['separator']; 
 }
 
 # loop through dictionary and add words to password
@@ -45,9 +45,9 @@ for ($i = 0; $i < $_GET['numWords']; $i++) {
 	# extract new word from dictionary
 	$newWord = $dictionary[rand(0, count($dictionary) - 1)];
 	# capitalize word if required
-	if ($_GET['case'] == 'Capitalize each word.') {
+	if ($_GET['letterCase'] == 'Capitalize each word.') {
 		$newWord = ucwords($newWord);
-	} elseif ($_GET['case'] == 'All upper case letters.') {
+	} elseif ($_GET['letterCase'] == 'All upper case letters.') {
 		$newWord = strtoupper($newWord);
 	} else {
 		$newWord = strtolower($newWord);
@@ -57,8 +57,8 @@ for ($i = 0; $i < $_GET['numWords']; $i++) {
 		$newPassword = $newWord;
 		updatePassword();
 	} else {
-		# add seperator and new word to existing password;
-		$newPassword = $password.$seperator.$newWord;
+		# add separator and new word to existing password;
+		$newPassword = $password . $separator . $newWord;
 		# update password
 		updatePassword();
 	}
@@ -69,7 +69,7 @@ if ($_GET['includeNum'] == 'yes') {
 	$number = $numbers[rand(0, count($number) - 1)];
 	$newPassword = $password . $number;
 	updatePassword();
-}
+} 
 
 # add symbol if required
 if ($_GET['includeSym'] == 'yes') {

@@ -44,6 +44,11 @@ a.image {
 	color: none;
 }
 
+label.error {
+	color:red;
+	display: block;
+}
+
 form, label {
 	font-size: 16px;
 	padding: 5px;

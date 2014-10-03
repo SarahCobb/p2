@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
    	<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
@@ -25,35 +25,37 @@
 				</div>
 				<div class="col-md-4">
 					<h2 class="generate">Generate Your XKCD Password</h2>
-					<form method="GET" name="generator" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" onsubmit="return validateForm()">
-						<label>How many words should be included?</label><br>
-						<select name="numWords">
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
+					<form method="GET" name="generator" id="generator" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
+						<label for="numWords">How many words should be included?</label><br>
+						<select name="numWords" id="numWords">
+							<option value="2" id="numWords">2</option>
+							<option value="3" id="numWords">3</option>
+							<option value="4" id="numWords">4</option>
+							<option value="5" id="numWords">5</option>
+							<option value="6" id="numWords">6</option>
 						</select><br><br>
-						<label>Would you prefer your words capitalized, all lower case, or all upper case?</label><br>
-						<input name="case" type="radio" value="Capitalize each word.">Capitalize each word.<br>
-						<input name="case" type="radio" value="All upper case letters.">All upper case letters.<br>
-						<input name="case" type="radio" value="All lower case letters.">All lower case letters.<br><br>
-						<label>What character should separate your words?</label><br>
-						<input name="seperator" type="radio" value="~">~<br>
-						<input name="seperator" type="radio" value="*">*<br>
-						<input name="seperator" type="radio" value="-">-<br>
-						<input name="seperator" type="radio" value="+">+<br>
-						<input name="seperator" type="radio" value="Surprise me!">Surprise me!<br><br>
+						<label for="letterCase">Would you prefer your words capitalized, all lower case, or all upper case?</label><br>
+						<input name="letterCase" type="radio" value="Capitalize each word.">Capitalize each word.<br>
+						<input name="letterCase" type="radio" value="All upper case letters.">All upper case letters.<br>
+						<input name="letterCase" type="radio" value="All lower case letters.">All lower case letters.<br><br>
+						<label for="separator">What character should separate your words?</label><br>
+						<input name="separator" type="radio" value="~">~<br>
+						<input name="separator" type="radio" value="*">*<br>
+						<input name="separator" type="radio" value="-">-<br>
+						<input name="separator" type="radio" value="+">+<br>
+						<input name="separator" type="radio" value="Surprise me!">Surprise me!<br><br>
 						<label>Include a number and/or symbol at the end of your password?</label><br>
 						<input name="includeNum" type="checkbox" value="yes">Include a number<br>
 						<input name="includeSym" type="checkbox" value="yes">Include a symbol<br>
+						<br id="insertError">
 						<input type="submit" name="Generate Password" value="Generate Password">
 						<input type="button" id="reset" value="RESET">
 					</form>
 				</div>
 			</div>
 		</div>
+	<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+	<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
 	<script type="text/javascript" src="validation.js"></script>
 	</body>
 </html>
